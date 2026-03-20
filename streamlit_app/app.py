@@ -4,7 +4,7 @@ import time
 import json as _json
 
 st.set_page_config(page_title="SLA Risk Copilot", page_icon="🚚", layout="wide")
-API_URL = "http://127.0.0.1:8000/predict"
+API_URL = "https://opsintellect-ai.onrender.com/predict"
 
 for k, v in {"drivers_available":22,"traffic_index":1.2,"system_latency_ms":120,"priority":"MEDIUM","promised_mins":40,"last_result":None}.items():
     if k not in st.session_state: st.session_state[k] = v
